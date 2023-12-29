@@ -1,0 +1,223 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.total{
+    display: grid;
+    grid-template-columns: 1fr 6fr 2fr;
+    grid-template-rows:1fr 5fr 5fr 5fr 1fr;
+    padding: 3px;
+    background-color: rgb(167, 167, 167);
+    height: 100vh;
+    width: 100vw;
+    grid-row-gap: 0.2em;
+    grid-column-gap: 0.2em;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+    background-color: rgb(201, 201, 232);
+    padding: 2px;
+   
+
+    font-size: xx-large;
+    color: beige;
+
+}
+.navigation{
+    
+    color: black;
+    font-size:x-large;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.navigation ul{
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+.navigation ul li{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    text-shadow: 3px 3px 3px rgb(140, 140, 153);
+}
+.navigation ul li:hover{
+    color: rgb(17, 17, 179);
+}
+#header{
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows:3fr 1fr 1fr;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    background-color: whitesmoke;
+
+}
+#header h1{
+    color:rgb(12, 99, 165);
+    text-shadow: 3px 3px 3px rgb(113, 113, 179);
+    font-family:'Times New Roman', Times, serif;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#header h6{
+    color:rgb(0,0,0);
+    text-shadow: 6px 6px 3px rgb(81, 81, 90);
+    font-family: 'Pacifico', cursive;
+    align-self: end;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#header h1 span{
+    color:rgb(3, 52, 89) ;
+}
+#menu{
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 2;
+    grid-row-end: 5;
+
+    /* display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #D5DEEF;
+}
+.option:hover{
+    background-color: #628ECB;
+}
+.heading{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: black;
+    font-weight: 700;
+}
+#main{
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    grid-row-start: 2;
+    grid-row-end: 5;
+
+    background-color: #003554;
+
+}
+#ad1{
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+#footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.option{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-color:#8AAEE0;
+    color: black;
+    margin: 1px;
+    padding: 0px;
+    width: 100%;
+    border-radius: 5px;
+    border:1px solid rgb(255, 255, 255);
+    box-shadow: 1px 1px 3px blue;
+}
+.glass{
+    height: 97%;
+    width: 97%;
+    background-color: #004D70;
+    border-radius: 9px;
+    box-shadow:7px 7px 5px rgb(9, 73, 110) ,-7px -7px 5px rgb(9,73,110);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    /* display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 0.2rem;
+    row-gap: 0.2rem; */
+}
+.card{
+    height: 49%;
+    width: 30%;
+    margin: auto;
+    background-color: #032030;
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 15fr 1fr;
+    border-radius: 6px;
+    border: 1px solid rgb(133, 132, 132);
+    box-shadow: 2px 2px 5px grey;
+    padding:1px;
+}
+.card:hover{
+    background-color: #022B42;
+}
+.card img{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 90%;
+    width: 90%;
+    margin: auto;
+}
+.card p{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: small;
+    margin: auto;
+   
+}
+.frame{
+    height: 99%;
+    width: 99%;
+}
+.navigation2 ul{
+    display: flex;
+    justify-content: space-between;
+}
+.navigation2 ul li{
+    /* display: flex;
+    justify-content: space-between; */
+    text-decoration: none;
+    list-style: none;
+    text-shadow: 3px 3px 3px rgb(140, 140, 153);
+}
+.navigation2 ul li:hover{
+    color: rgb(17, 17, 179);
+}
